@@ -9,7 +9,7 @@ const Footer = () => {
           Ecommerce 2025, All Rights Reserved
         </p>
         <a
-          href="https://github.com/dineshdevelope/Mini-Ecommarce-App"
+          href="https://github.com/dineshdevelope/E-commerce-App"
           target="_blank"
           className="text-white rounded-full bg-gray-800 p-2 hover:bg-gray-700"
         >
