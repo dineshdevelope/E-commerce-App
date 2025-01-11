@@ -128,7 +128,7 @@ A mini e-commerce application built using the **MERN stack** (MongoDB, Express.j
 ## Screenshots
 
 1.  **Home Page**: Displaying a list of products.  
-    ![Home Page](./frontend/public/screenshots/products.png)(https://your-live-demo-link/home)
+    ![Home Page](./frontend/public/screenshots/products.png)(https://e-commerce-app-1-2cpw.onrender.com/)
 
 2.  **Product Details**: Detailed view of a selected product.  
     ![Product Details](./frontend/public/screenshots/product-desc.png)
