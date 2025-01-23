@@ -2,9 +2,9 @@ import { Schema, model } from "mongoose";
 
 const schema = new Schema({
   name: String,
-  price: String,
+  price: Number,
   description: String,
-  rattings: String,
+  ratings: Number,
   images: [
     {
       image: String,

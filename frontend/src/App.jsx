@@ -7,6 +7,9 @@ import ProductDetail from "./pages/ProductDetail";
 import { useState } from "react";
 import { ToastContainer } from "react-toastify";
 import CartPage from "./pages/CartPage";
+import AddProduct from "./pages/AddProduct";
+import ProductEdit from "./pages/ProductEdit";
+import AdminHomePage from "./pages/AdminHomePage";
 
 function App() {
   const [cardItems, setcardItems] = useState([]);
@@ -33,6 +36,9 @@ function App() {
               <CartPage cardItems={cardItems} setcardItems={setcardItems} />
             }
           />
+          <Route path="addproduct" element={<AddProduct />} />
+          <Route path="editproduct/:id" element={<ProductEdit />} />
+          <Route path="admin" element={<AdminHomePage />} />
         </Routes>
         <Footer />
       </Router>
