@@ -10,6 +10,7 @@ import CartPage from "./pages/CartPage";
 import AddProduct from "./pages/AddProduct";
 import ProductEdit from "./pages/ProductEdit";
 import AdminHomePage from "./pages/AdminHomePage";
+import OrdersPage from "./pages/OrdersPage";
 
 function App() {
   const [cardItems, setcardItems] = useState([]);
@@ -39,6 +40,7 @@ function App() {
           <Route path="addproduct" element={<AddProduct />} />
           <Route path="editproduct/:id" element={<ProductEdit />} />
           <Route path="admin" element={<AdminHomePage />} />
+          <Route path="orders" element={<OrdersPage />} />
         </Routes>
         <Footer />
       </Router>

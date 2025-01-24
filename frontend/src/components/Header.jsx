@@ -71,6 +71,15 @@ const Header = ({ cardItems }) => {
                     Edit / Delete Product
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to="/orders"
+                    onClick={closeDropdown} // Close dropdown on click
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    Orders
+                  </Link>
+                </li>
               </ul>
             </div>
           )}

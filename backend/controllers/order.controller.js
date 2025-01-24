@@ -25,3 +25,23 @@ export const createOrder = async (req, res, next) => {
     res.status(404).json({ message: error.message });
   }
 };
+
+export const getAllOrders = async (req, res) => {
+  try {
+    const orders = await OrderModel.find();
+    res.status(200).json(orders);
+  } catch (error) {
+    res.status(404).json({ message: error.message });
+  }
+};
+
+export const deleteOrder = async (req, res) => {
+  try {
+    const deletedOrder = await OrderModel.findOneAndDelete({
+      _id: req.params.id,
+    });
+    res.json({ message: "Order Deleted" });
+  } catch (error) {
+    return res.status(400).json({ message: error.message });
+  }
+};
